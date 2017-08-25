@@ -6,13 +6,29 @@
 </head>
 <body>
 <script>
-    var nums=[2,4,5]
+    var nums=[2,4,5];
     var str=nums.join();
-    console.log(str)
+    console.log(str);
     var words=["border","left","color"];
-    var wordstr=words.join("-")
-    console.log(wordstr)
-
+    var wordstr=words.join("-");
+    console.log(wordstr);
+    // reverse
+    nums.reverse();
+    console.log(nums);
+    var strs=["a","b","c", "d"];
+    //返回dcba这个字符串
+    var newstr=strs.reverse().join();
+    console.log(newstr);
+    //sort排序
+    var arr=[9,23,15,88,12];
+    //降序
+    arr.sort(function(a,b){return b-a})
+    console.log(arr)
+    //升序
+    arr.sort(function (a, b) {
+        return a-b
+    });
+    console.log(arr)
 </script>
 </body>
 </html>
