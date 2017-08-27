@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var usrName=prompt("请输入登录邮箱");
+    function getName(usr){
+        var pla1=usr.lastIndexOf("@");
+        var name1=usr.slice(0,pla1);
+        return name1;
+    }
+    function getPlace(usr){
+        var pla2=usr.lastIndexOf("@");
+        var name2=usr.slice(pla2+1);
+        return name2;
+    }
+    var youName=getName(usrName);
+    var youPlace=getPlace(usrName);
+    document.write("你的用户名:"+youName);
+    document.write("你的邮箱域名:"+youPlace);
+</script>
+</body>
+</html>
