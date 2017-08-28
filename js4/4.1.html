@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+<body>
+<script>
+    var min=Math.min(5,-4,0,9.108,-55);
+    var max=Math.max(88,0,6,47,199);
+    console.log(min);
+    console.log(max);
+    var num=189.09;
+    var int1=Math.ceil(num);
+    var int2=Math.floor(num);
+    console.log(int1);
+    console.log(int2);
+    //求n到M之间的随机证书的公式：
+    var  random=Math.random();
+    console.log(random);
+    function getRandom(n,m){
+        var choise=m-n+1;//随机整数的个数
+        return Math.floor((Math.random()*choise+n));
+    }
+    var random1=getRandom(2,6);
+    console.log(random1);
+</script>
+</body>
+</html>

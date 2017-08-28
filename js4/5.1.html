@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+<body>
+<script>
+    //创建一个日期时间对象
+    var
+        today=new Date(),
+        year=today.getFullYear(),
+        month=today.getMonth(),
+        date=today.getDate(),
+        week=today.getDay(),
+        hours=today.getHours(),
+        minutes=today.getMinutes(),
+        seconds=today.getSeconds(),
+        time=year+'年'+month+"月"+date+'日'+hours+'时'+minutes+'分'+seconds+'秒';
+
+    console.log("现在是:"+time);
+
+</script>
+</body>
+</html>

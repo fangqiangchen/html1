@@ -20,12 +20,27 @@
 <script>
     //获取id为box的这个元素
     var box=document.getElementById("box");
+    box.style.color='#f00';
+    box.style.fontWeight="bold";
     console.log(box);
     //获取页面中所有的LI
     var lis=document.getElementsByTagName("li");
     console.log(lis.length);
     var lis2=document.getElementById('list1').getElementsByTagName("li");
-    console.log(lis2.length);
+    //遍历每一个li
+    for(var i=0,len=lis.length;i<len;i++) {
+        lis[i].style.color = '#00f';
+        if (i == 0) {
+            lis[i].style.backgroundColor = "#ccc";
+        } else if (i == 1) {
+            lis[i].style.backgroundColor = "#666";
+        } else if (i == 2) {
+            lis[i].style.backgroundColor = "#999";
+        }else{
+            lis[i].style.backgroundColor = "#333";
+        }
+    }
+
 </script>
 </body>
 </html>
