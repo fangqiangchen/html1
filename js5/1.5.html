@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="list">
+    <li>前端开发</li>
+    <li class="on">服务器端开发</li>
+    <li>UI设计</li>
+</ul>
+<ol>
+    <li>js框架</li>
+    <li>js原生</li>
+</ol>
+<div class="box" id="box">
+    元素
+</div>
+<script>
+    var lis=document.getElementById("list").getElementsByTagName("li");
+    for(var i=0,len=lis.length;i<len;i++){
+        console.log(lis[i].innerHTML);
+        lis[i].innerHTML+='程序';
+        lis[1].className="current";
+    }
+    console.log(document.getElementById("box").className);
+
+</script>
+</body>
+</html>

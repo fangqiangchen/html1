@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+<body>
+<p id="text" align="'center" date-type="">文本</p>
+<input type="text" name="user" value="user" id="user" validate="true">
+<script>
+    var p=document.getElementById("text");
+    console.log(p.className)
+    //给p设置一个date-color的属性
+    p.setAttribute("date-color","red");
+    //给input设置一个isRead的属性
+    user.setAttribute("isRead","false");
+    //删除p上面的align属性
+    p.removeAttribute("align");
+
+</script>
+</body>
+</html>
