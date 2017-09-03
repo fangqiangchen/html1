@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-
+<div class="box">
+    请输入搜索关键字：
+    <input type="text" placeholder="请输入搜索关键字" id="key">
+    <input type="button" value="搜索" id="search">
+</div>
+<a href="3.1.html" id="go">跳转</a>
+<script>
+    //给按钮绑定事件
+    document.getElementById("search").onclick=function () {
+        //获取搜索关键字并对它进行编码
+        var key=encodeURIComponent(document.getElementById("key").value);
+        //跳转到指定页面
+        location.href''
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>histrory</title>
+</head>
+<body>
+<p>这是index11.html</p>
+<p><a href="3.3.html">3.3.html</a></p>
+<p><input type="button" value="后退" id="btn"></p>
+<p><input type="button" value="前进" id="btn2"></p>
+<p><input type="button" value="前进2" id="btn3"></p>
+<script>
+    var btn=document.getElementById("btn");
+    //点击btn按钮时返回历史记录的上一步
+    btn.onclick=function () {
+        //history.back();
+        history.go(-1);
+    }
+    btn2.onclick=function(){
+        history.go(1);
+    }
+    btn3.onclick=function(){
+        history.go(2);
+    }
+</script>
+</body>
+</html>
