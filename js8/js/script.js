@@ -20,20 +20,20 @@ function slideImg() {
         if(timer) clearInterval(timer);
     }
     main.onmouseout=function () {
-       var timer =setInterval(function () {
+        var timer =setInterval(function () {
             index++;
             if(index>=len){
                 index=0;
             }
-           //切换图片
-           changeImg();
-       },3000);
+            //切换图片
+            changeImg();
+        },3000);
     }
     //自动在mian上触发鼠标离开的事件
     main.onmouseout();
-
     //遍历所有点击，且绑定点击事件，点击圆点切换图片
     for(var d=0;d<len;d++){
+
 
         //给所有span添加一个id的属性，值为d作为当前span的索引
         dots[d].id=d;
@@ -70,5 +70,15 @@ function changeImg(){
     //根据index索引找到当前div和当前span,将其显示出来和设为当前
     pics[index].style.display='block';
     dots[index].className="active";
+}
+slideImg();
+
+//切换图片
+function changeImg(){
+    //遍历banner下多有的div,将其隐藏
+    for(var i=0;i<len;i++){
+        pics[i].style.display="none";
+    }
+    pics[index].style.display='block';
 }
 slideImg();
