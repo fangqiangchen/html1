@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+</head>
+<body>
+
+<h1>创建HTML</h1>
+
+<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+<script>
+    // 此处写代码
+    $(function(){
+        var link1 =$('<a>百度</a>').attr({
+            href:'http://www.baidu.com',
+            target:'_blank',
+            title:'goto badu'
+        });
+        link1.appendTo('body')
+    })
+</script>
+</body>
+</html>

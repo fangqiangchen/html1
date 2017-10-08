@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>习题</title>
+</head>
+<body>
+
+<h1>筛选和遍历jQuery对象</h1>
+
+<ul>
+    <li class="item1">item1</li>
+    <li class="item2">item2</li>
+    <li class="item3">item3</li>
+    <li class="item4">item4</li>
+    <li class="item5">item5</li>
+    <li class="item6">item6</li>
+    <li class="item7">item7</li>
+    <li class="item8">item8</li>
+    <li class="item9">item9</li>
+</ul>
+
+<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+<script>
+    $(function () {
+        var arr=[]
+
+       $('li').each(function(index,domElement){
+           arr[index]=this.innerHTML;
+       });
+        console.log(arr);
+    });
+</script>
+</body>
+</html>
